@@ -1,0 +1,162 @@
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+/*--GENERAL--*/
+
+html, body{
+    height: 98%;
+    width: auto;
+    background-color: var(--Very-Light-Gray);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+footer{
+    display: none;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*--HEADER--*/
+
+.header{
+    width: 38rem;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-title{
+    margin: 0;
+    color: var(--Very-Dark-Blue);
+    font-weight: 200;
+    font-size: 2.6rem;
+}
+.second-title{
+    margin: 0;
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    font-size: 2.6rem;
+}
+.third-title{
+    margin: 0;
+    padding-top: 1rem;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/*--CARDS--*/
+
+.cards{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 21rem;
+    height: 14rem;
+    border-radius: .8rem;
+
+    /*SHADOW*/
+    -webkit-box-shadow: 0px 15px 20px 5px rgba(76,78,97,0.18);
+    -moz-box-shadow: 0px 15px 20px 5px rgba(76,78,97,0.18);
+    box-shadow: 0px 15px 20px 5px rgba(76,78,97,0.18);
+}
+
+.card-title{
+    margin: 0;
+    color: var(--Very-Dark-Blue);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.card-text{
+    width: 20rem;
+    padding-top: 1rem;
+    margin: 0;
+    color: var(--Grayish-Blue);
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.card img{
+    padding: 0;
+    width: 4.6rem;
+    align-self: flex-end;
+}
+
+.cyan{
+    border-top: solid var(--Cyan) .4rem;
+}
+.red{
+    border-top: solid var(--Red) .4rem;
+}
+.orange{
+    border-top: solid var(--Orange) .4rem;
+}
+.blue{
+    border-top: solid var(--Blue) .4rem;
+}
+
+
+
+/*-------------RESPONSIVE------------*/
+
+
+@media(max-width:1200px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 950px){
+    html{
+        font-size: 15px;
+    }
+
+    .header{
+        width: 25rem;
+        text-align: center;
+    }
+
+    .first-title{
+        font-size: 2rem;
+    }
+    
+    .second-title{
+        font-size: 2rem;
+    }
+
+    .third-title{
+        font-size: 1.2rem;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+}
